@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          roshka-sso:
+            client-id: ${someclientid}
+            client-secret: ${someclientsecret}
+            scope: openid
+            redirect-uri: ${http://redirect/uri}
+            client-name: ${someclientname}
+        provider:
+          roshka-sso:
+            authorization-uri: ${authorization-url}
+            token-uri: ${token-uri}
+            jwk-set-uri: ${jwk-uri}
+            issuer-uri: ${issuer-uri}
+            user-info-uri: ${user-info-uri}
+            user-info-authentication-method: header
+            user-name-attribute: sub
