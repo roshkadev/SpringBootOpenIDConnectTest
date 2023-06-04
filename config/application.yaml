@@ -18,3 +18,8 @@ spring:
             user-info-uri: ${user-info-uri}
             user-info-authentication-method: header
             user-name-attribute: sub
+
+
+logging:
+  level:
+    org.springframework.security: TRACE
